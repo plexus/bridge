@@ -1,5 +1,5 @@
 (ns bridge.ui.component.edit-field
-  (:require bridge.data.edit.spec
+  (:require #_bridge.data.edit.spec
             [bridge.data.string :as data.string]
             [bridge.ui.spec :as ui.spec]
             [bridge.ui.util :refer [<== ==> log]]

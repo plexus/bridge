@@ -1,10 +1,10 @@
 (require '[figwheel-sidecar.repl-api :as figwheel])
 
 (def figwheel-options
-  {:figwheel-options
-   {:nrepl-port       7890
-    :nrepl-middleware ["cider.nrepl/cider-middleware"
-                       "refactor-nrepl.middleware/wrap-refactor"]}
+  {#_:figwheel-options
+   #_{:nrepl-port       7890
+      :nrepl-middleware ["cider.nrepl/cider-middleware"
+                         "refactor-nrepl.middleware/wrap-refactor"]}
 
    :all-builds
    [{:id           "dev"
@@ -24,6 +24,6 @@
                         ;; 'day8.re-frame-10x.preload
                         ]}}]})
 
-(spit ".nrepl-port" (get-in figwheel-options [:figwheel-options :nrepl-port]))
+;; (spit ".nrepl-port" (get-in figwheel-options [:figwheel-options :nrepl-port]))
 
 (figwheel/start-figwheel! figwheel-options)

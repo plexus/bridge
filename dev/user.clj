@@ -9,3 +9,6 @@
 (s/check-asserts true)
 
 (ig.repl/set-prep! config/system)
+
+(defn reset []
+  (ig.repl/reset))
